@@ -1,0 +1,33 @@
+zerosonesfun-sound-system:
+  admin:
+    settings:
+      heading: "音频系统"
+      inline_label: "启用内联链接音频播放器"
+      inline_help: "自动将帖子中的 .mp3、.wav 和 .ogg 文件链接转换为可点击播放的音频。"
+      global_label: "启用全站底部音频栏"
+      global_help: "在论坛底部显示一个常驻的音频播放器，由 howler.js 提供支持。"
+      tracks_label: "音轨"
+      tracks_help: "管理全局播放器的播放列表。你可以添加、删除并拖动以重新排序。每个音轨需要一个 URL、标题和艺术家名称。"
+      add_track: "添加音轨"
+      track_url: "音频 URL"
+      track_title: "标题"
+      track_artist: "艺术家"
+      remove_track: "删除"
+      upload: "上传文件"
+  forum:
+    player:
+      play: "播放"
+      pause: "暂停"
+      previous: "上一首"
+      next: "下一首"
+      mute: "静音"
+      unmute: "取消静音"
+      volume: "音量"
+      progress: "播放进度"
+      now_playing: "正在播放：{title} — {artist}"
+      no_tracks: "尚未配置任何音轨。"
+    inline:
+      play: "播放音频"
+      pause: "暂停音频"
+      loading: "正在加载音频…"
+

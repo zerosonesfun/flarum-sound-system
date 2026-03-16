@@ -1,0 +1,33 @@
+zerosonesfun-sound-system:
+  admin:
+    settings:
+      heading: "Sistema de sonido"
+      inline_label: "Activar reproductor de audio en enlaces en línea"
+      inline_help: "Convierte automáticamente los enlaces a archivos .mp3, .wav y .ogg en las publicaciones en audio que se reproduce al hacer clic."
+      global_label: "Activar barra de audio inferior global"
+      global_help: "Muestra un reproductor de audio persistente en la parte inferior del foro, impulsado por howler.js."
+      tracks_label: "Pistas"
+      tracks_help: "Administra la lista de reproducción para el reproductor global. Puedes añadir, eliminar y arrastrar para reordenar las pistas. Cada pista requiere una URL, un título y un artista."
+      add_track: "Añadir pista"
+      track_url: "URL de audio"
+      track_title: "Título"
+      track_artist: "Artista"
+      remove_track: "Eliminar"
+      upload: "Subir archivo"
+  forum:
+    player:
+      play: "Reproducir"
+      pause: "Pausar"
+      previous: "Pista anterior"
+      next: "Pista siguiente"
+      mute: "Silenciar"
+      unmute: "Reactivar sonido"
+      volume: "Volumen"
+      progress: "Progreso de reproducción"
+      now_playing: "Reproduciendo: {title} — {artist}"
+      no_tracks: "No hay pistas configuradas."
+    inline:
+      play: "Reproducir audio"
+      pause: "Pausar audio"
+      loading: "Cargando audio…"
+

@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "@zerosonesfun/flarum-sound-system",
+  "dependencies": {
+    "flarum-webpack-config": "^2.0.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "howler": "^2.2.4"
+  }
+}

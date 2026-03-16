@@ -1,0 +1,33 @@
+zerosonesfun-sound-system:
+  admin:
+    settings:
+      heading: "Sound-System"
+      inline_label: "Audio-Player für Inline-Links aktivieren"
+      inline_help: "Konvertiert automatisch Links zu .mp3-, .wav- und .ogg-Dateien in Beiträgen in anklickbare Audio-Wiedergabe."
+      global_label: "Globale untere Audiobar aktivieren"
+      global_help: "Zeigt unten im Forum einen persistenten Audio-Player an, betrieben mit howler.js."
+      tracks_label: "Titel"
+      tracks_help: "Verwalte die Playlist für den globalen Player. Du kannst Titel hinzufügen, entfernen und per Drag & Drop neu anordnen. Jeder Titel benötigt eine URL, einen Titel und einen Künstler."
+      add_track: "Titel hinzufügen"
+      track_url: "Audio-URL"
+      track_title: "Titel"
+      track_artist: "Künstler"
+      remove_track: "Entfernen"
+      upload: "Datei hochladen"
+  forum:
+    player:
+      play: "Wiedergeben"
+      pause: "Pause"
+      previous: "Vorheriger Titel"
+      next: "Nächster Titel"
+      mute: "Stummschalten"
+      unmute: "Stummschaltung aufheben"
+      volume: "Lautstärke"
+      progress: "Wiedergabefortschritt"
+      now_playing: "Läuft: {title} — {artist}"
+      no_tracks: "Keine Titel konfiguriert."
+    inline:
+      play: "Audio wiedergeben"
+      pause: "Audio pausieren"
+      loading: "Audio wird geladen…"
+

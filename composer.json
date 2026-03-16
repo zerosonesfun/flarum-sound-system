@@ -1,0 +1,27 @@
+{
+  "name": "zerosonesfun/flarum-sound-system",
+  "description": "Inline audio links and a persistent global audio bar powered by howler.js.",
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.4",
+    "flarum/core": "^1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zerosonesfun\\SoundSystem\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Sound System",
+      "icon": {
+        "name": "fas fa-headphones",
+        "backgroundColor": "#635748",
+        "color": "#ffffff"
+      }
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

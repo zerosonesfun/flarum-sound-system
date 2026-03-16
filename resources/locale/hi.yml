@@ -1,0 +1,33 @@
+zerosonesfun-sound-system:
+  admin:
+    settings:
+      heading: "साउंड सिस्टम"
+      inline_label: "इनलाइन ऑडियो लिंक प्लेयर सक्षम करें"
+      inline_help: "पोस्ट में दिए गए .mp3, .wav और .ogg फ़ाइलों के लिंक को अपने आप क्लिक-टू-प्ले ऑडियो में बदल देता है।"
+      global_label: "नीचे की ग्लोबल ऑडियो बार सक्षम करें"
+      global_help: "फ़ोरम के नीचे एक स्थायी ऑडियो प्लेयर दिखाता है, जो howler.js पर आधारित है।"
+      tracks_label: "ट्रैक"
+      tracks_help: "ग्लोबल प्लेयर की प्लेलिस्ट प्रबंधित करें। आप ट्रैक जोड़ सकते हैं, हटा सकते हैं और खींचकर उनका क्रम बदल सकते हैं। हर ट्रैक के लिए URL, शीर्षक और कलाकार का नाम आवश्यक है।"
+      add_track: "ट्रैक जोड़ें"
+      track_url: "ऑडियो URL"
+      track_title: "शीर्षक"
+      track_artist: "कलाकार"
+      remove_track: "हटाएँ"
+      upload: "फ़ाइल अपलोड करें"
+  forum:
+    player:
+      play: "चलाएँ"
+      pause: "रोकें"
+      previous: "पिछला ट्रैक"
+      next: "अगला ट्रैक"
+      mute: "म्यूट"
+      unmute: "म्यूट हटाएँ"
+      volume: "वॉल्यूम"
+      progress: "प्लेबैक प्रगति"
+      now_playing: "अभी चल रहा है: {title} — {artist}"
+      no_tracks: "कोई ट्रैक कॉन्फ़िगर नहीं है।"
+    inline:
+      play: "ऑडियो चलाएँ"
+      pause: "ऑडियो रोकें"
+      loading: "ऑडियो लोड हो रहा है…"
+

@@ -1,0 +1,33 @@
+zerosonesfun-sound-system:
+  admin:
+    settings:
+      heading: "نظام الصوت"
+      inline_label: "تفعيل مشغّل الصوت لروابط الصوت المضمّنة"
+      inline_help: "يحوّل تلقائيًا الروابط إلى ملفات ‎.mp3 و‎.wav و‎.ogg في المشاركات إلى صوت يمكن تشغيله بالنقر."
+      global_label: "تفعيل شريط الصوت السفلي العام"
+      global_help: "يعرض مشغّل صوت ثابتًا في أسفل المنتدى يعمل بواسطة howler.js."
+      tracks_label: "المسارات"
+      tracks_help: "إدارة قائمة التشغيل للمشغّل العام. يمكنك إضافة المسارات وحذفها وسحبها لإعادة الترتيب. يتطلّب كل مسار عنوان URL وعنوانًا واسم فنان."
+      add_track: "إضافة مسار"
+      track_url: "عنوان URL للصوت"
+      track_title: "العنوان"
+      track_artist: "الفنان"
+      remove_track: "إزالة"
+      upload: "رفع ملف"
+  forum:
+    player:
+      play: "تشغيل"
+      pause: "إيقاف مؤقت"
+      previous: "المسار السابق"
+      next: "المسار التالي"
+      mute: "كتم الصوت"
+      unmute: "إلغاء كتم الصوت"
+      volume: "مستوى الصوت"
+      progress: "تقدّم التشغيل"
+      now_playing: "يُشغَّل الآن: {title} — {artist}"
+      no_tracks: "لا توجد مسارات مُعدّة."
+    inline:
+      play: "تشغيل الصوت"
+      pause: "إيقاف الصوت مؤقتًا"
+      loading: "جارٍ تحميل الصوت…"
+

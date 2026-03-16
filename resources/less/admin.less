@@ -1,0 +1,58 @@
+// Sound System admin settings: track card and playlist list
+.SoundSystemTrack {
+  border: 1px solid var(--muted-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  margin-top: 10px;
+}
+
+.SoundSystemTrack:hover {
+  background: var(--control-bg);
+  cursor: grab;
+}
+
+.SoundSystemTrack:active {
+  cursor: grabbing;
+}
+
+// List items: row layout with delete on the right
+.SoundSystemTrack:not(.SoundSystemTrack--draft) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  .SoundSystemTrack-fields {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.SoundSystemTrack-artist {
+  font-weight: bold;
+}
+
+// Spacing between form elements
+.SoundSystemTracksLayout {
+  .SoundSystemTrack-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    .FormControl,
+    input.FormControl {
+      margin-bottom: 0;
+    }
+  }
+
+  .SoundSystemTrack + .SoundSystemTrack,
+  .SoundSystemTrack--draft + .SoundSystemTrack--draft,
+  .SoundSystemTracksAdd > * + * {
+    margin-top: 0.75rem;
+  }
+
+  .SoundSystemTrack--draft .SoundSystemTrack-fields + .Button {
+    margin-top: 0.75rem;
+  }
+}

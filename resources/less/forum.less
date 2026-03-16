@@ -1,0 +1,181 @@
+.SoundSystemPlayer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  background: @primary-color;
+  color: #fff;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.SoundSystemPlayer-barArea {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.SoundSystemPlayer-resumeHint {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.SoundSystemPlayer[data-autoplay-blocked='1'] .SoundSystemPlayer-resumeHint {
+  display: block;
+}
+
+.SoundSystemPlayer a,
+.SoundSystemPlayer button,
+.SoundSystemPlayer input {
+  color: inherit;
+}
+
+.SoundSystemPlayer-buttons {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.SoundSystemPlayer-button {
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  background: @secondary-color;
+  border: none;
+  color: #fff;
+}
+
+.SoundSystemPlayer-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.SoundSystemPlayer-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.SoundSystemPlayer-progress {
+  flex: 0 0 160px;
+}
+
+.SoundSystemPlayer-progress input[type='range'],
+.SoundSystemPlayer-volume input[type='range'] {
+  width: 100%;
+  accent-color: #fff;
+  // Filled track (progress/volume level) = white so it contrasts with the primary-color bar
+}
+
+// Thumb (knob) outline so it’s visible on the bar
+.SoundSystemPlayer-progress input[type='range']::-webkit-slider-thumb,
+.SoundSystemPlayer-volume input[type='range']::-webkit-slider-thumb {
+  background: @secondary-color;
+  border: 2px solid #fff;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.SoundSystemPlayer-progress input[type='range']::-moz-range-thumb,
+.SoundSystemPlayer-volume input[type='range']::-moz-range-thumb {
+  background: @secondary-color;
+  border: 2px solid #fff;
+  box-shadow: none;
+  outline: none;
+}
+
+.SoundSystemPlayer-volume {
+  flex: 0 0 100px;
+}
+
+.SoundSystemPlayer--hidden {
+  display: none;
+}
+
+.SoundSystem-inline-audio {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.SoundSystem-inline-icon {
+  font-size: 0.8em;
+  margin-right: 0.25rem;
+}
+
+.SoundSystem-inline-label {
+  text-decoration: underline;
+}
+
+.SoundSystem-inline-progress {
+  display: block;
+  height: 2px;
+  margin-top: -7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+}
+
+.SoundSystem-inline-progressBar {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: @secondary-color;
+  transition: width 0.15s linear;
+}
+
+.SoundSystemTracksLayout {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.SoundSystemTracksAdd {
+  flex: 0 0 320px;
+}
+
+.SoundSystemTracksList {
+  flex: 1 1 auto;
+}
+
+.SoundSystemTrack {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.SoundSystemTrack--draft {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.SoundSystemTrack-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
