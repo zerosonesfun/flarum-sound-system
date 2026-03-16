@@ -1,0 +1,2 @@
+import './admin/index.js';
+

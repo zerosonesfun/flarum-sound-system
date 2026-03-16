@@ -1,0 +1,2 @@
+import './src/forum.js';
+

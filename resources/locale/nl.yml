@@ -1,0 +1,33 @@
+zerosonesfun-sound-system:
+  admin:
+    settings:
+      heading: "Soundsysteem"
+      inline_label: "Inline audiolinkspeler inschakelen"
+      inline_help: "Zet automatisch links naar .mp3-, .wav- en .ogg-bestanden in berichten om in audio die met een klik kan worden afgespeeld."
+      global_label: "Globale audiobalk onderaan inschakelen"
+      global_help: "Toont een permanente audiospeler onderaan het forum, aangedreven door howler.js."
+      tracks_label: "Tracks"
+      tracks_help: "Beheer de afspeellijst voor de globale speler. Je kunt tracks toevoegen, verwijderen en slepen om opnieuw te ordenen. Elke track heeft een URL, titel en artiest nodig."
+      add_track: "Track toevoegen"
+      track_url: "Audio-URL"
+      track_title: "Titel"
+      track_artist: "Artiest"
+      remove_track: "Verwijderen"
+      upload: "Bestand uploaden"
+  forum:
+    player:
+      play: "Afspelen"
+      pause: "Pauze"
+      previous: "Vorige track"
+      next: "Volgende track"
+      mute: "Dempen"
+      unmute: "Dempen opheffen"
+      volume: "Volume"
+      progress: "Afspeelvoortgang"
+      now_playing: "Nu aan het afspelen: {title} — {artist}"
+      no_tracks: "Er zijn geen tracks geconfigureerd."
+    inline:
+      play: "Audio afspelen"
+      pause: "Audio pauzeren"
+      loading: "Audio wordt geladen…"
+

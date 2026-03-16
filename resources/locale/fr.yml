@@ -1,0 +1,33 @@
+zerosonesfun-sound-system:
+  admin:
+    settings:
+      heading: "Système sonore"
+      inline_label: "Activer le lecteur audio sur les liens en ligne"
+      inline_help: "Convertit automatiquement les liens vers des fichiers .mp3, .wav et .ogg dans les messages en audio lisible par clic."
+      global_label: "Activer la barre audio globale en bas"
+      global_help: "Affiche un lecteur audio persistant en bas du forum, propulsé par howler.js."
+      tracks_label: "Pistes"
+      tracks_help: "Gérez la liste de lecture du lecteur global. Vous pouvez ajouter, supprimer et faire glisser pour réorganiser les pistes. Chaque piste nécessite une URL, un titre et un artiste."
+      add_track: "Ajouter une piste"
+      track_url: "URL audio"
+      track_title: "Titre"
+      track_artist: "Artiste"
+      remove_track: "Supprimer"
+      upload: "Téléverser un fichier"
+  forum:
+    player:
+      play: "Lecture"
+      pause: "Pause"
+      previous: "Piste précédente"
+      next: "Piste suivante"
+      mute: "Couper le son"
+      unmute: "Rétablir le son"
+      volume: "Volume"
+      progress: "Progression de la lecture"
+      now_playing: "En lecture : {title} — {artist}"
+      no_tracks: "Aucune piste configurée."
+    inline:
+      play: "Lire l’audio"
+      pause: "Mettre l’audio en pause"
+      loading: "Chargement de l’audio…"
+

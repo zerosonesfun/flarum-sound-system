@@ -1,0 +1,33 @@
+zerosonesfun-sound-system:
+  admin:
+    settings:
+      heading: "サウンドシステム"
+      inline_label: "インラインリンク用オーディオプレーヤーを有効にする"
+      inline_help: "投稿内の .mp3 / .wav / .ogg ファイルへのリンクを、自動的にクリックで再生できるオーディオに変換します。"
+      global_label: "サイト下部のグローバルオーディオバーを有効にする"
+      global_help: "フォーラム下部に常に表示されるオーディオプレーヤーを追加します（howler.js 使用）。"
+      tracks_label: "トラック"
+      tracks_help: "グローバルプレーヤーのプレイリストを管理します。トラックの追加・削除、ドラッグによる並べ替えが可能です。各トラックには URL・タイトル・アーティストが必要です。"
+      add_track: "トラックを追加"
+      track_url: "オーディオ URL"
+      track_title: "タイトル"
+      track_artist: "アーティスト"
+      remove_track: "削除"
+      upload: "ファイルをアップロード"
+  forum:
+    player:
+      play: "再生"
+      pause: "一時停止"
+      previous: "前のトラック"
+      next: "次のトラック"
+      mute: "ミュート"
+      unmute: "ミュート解除"
+      volume: "音量"
+      progress: "再生進行状況"
+      now_playing: "再生中: {title} — {artist}"
+      no_tracks: "設定されているトラックはありません。"
+    inline:
+      play: "オーディオを再生"
+      pause: "オーディオを一時停止"
+      loading: "オーディオを読み込み中…"
+
