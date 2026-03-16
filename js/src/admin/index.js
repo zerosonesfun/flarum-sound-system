@@ -330,8 +330,14 @@ app.initializers.add('zerosonesfun-sound-system-admin', () => {
     },
   };
 
-  app.extensionData
-    .for('zerosonesfun-sound-system')
+  // Flarum 1.x: extension id from composer name (slash -> dash). Some omit "flarum-" prefix.
+  const data =
+    app.extensionData &&
+    (app.extensionData.for('zerosonesfun-flarum-sound-system') ||
+      app.extensionData.for('zerosonesfun-sound-system'));
+  if (!data) return;
+
+  data
     .registerSetting({
       setting: 'zerosonesfun-sound-system.inline_enabled',
       type: 'boolean',

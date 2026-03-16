@@ -14,22 +14,37 @@ use Zerosonesfun\SoundSystem\Api\Controller\AppSoundController;
 use Zerosonesfun\SoundSystem\Api\Controller\DeleteTrackController;
 use Zerosonesfun\SoundSystem\Api\Controller\UploadTrackController;
 
+$forumJs = __DIR__.'/js/dist/forum.js';
+$adminJs = __DIR__.'/js/dist/admin.js';
+$forumLess = __DIR__.'/resources/less/forum.less';
+$adminLess = __DIR__.'/resources/less/admin.less';
+
+$forumFrontend = new Extend\Frontend('forum');
+if (file_exists($forumJs)) {
+    $forumFrontend->js($forumJs);
+}
+if (file_exists($forumLess)) {
+    $forumFrontend->css($forumLess);
+}
+
+$adminFrontend = new Extend\Frontend('admin');
+if (file_exists($adminJs)) {
+    $adminFrontend->js($adminJs);
+}
+if (file_exists($adminLess)) {
+    $adminFrontend->css($adminLess);
+}
+
 return [
-    (new Extend\Frontend('forum'))
-        ->js(__DIR__.'/js/dist/forum.js')
-        ->css(__DIR__.'/resources/less/forum.less'),
-
-    (new Extend\Frontend('admin'))
-        ->js(__DIR__.'/js/dist/admin.js')
-        ->css(__DIR__.'/resources/less/admin.less'),
-
+    $forumFrontend,
+    $adminFrontend,
     new Extend\Locales(__DIR__.'/resources/locale'),
 
     (new Extend\Settings())
-        ->default('zerosonesfun-sound-system.dev_console_debug', false)
-        ->default('zerosonesfun-sound-system.app_sounds', false)
-        ->default('zerosonesfun-sound-system.inline_enabled', true)
-        ->default('zerosonesfun-sound-system.global_enabled', false)
+        ->default('zerosonesfun-sound-system.dev_console_debug', '0')
+        ->default('zerosonesfun-sound-system.app_sounds', '0')
+        ->default('zerosonesfun-sound-system.inline_enabled', '1')
+        ->default('zerosonesfun-sound-system.global_enabled', '0')
         ->serializeToForum('soundSystemAppSounds', 'zerosonesfun-sound-system.app_sounds', function ($value): bool {
             return (bool) $value;
         })
