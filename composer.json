@@ -1,6 +1,6 @@
 {
   "name": "zerosonesfun/flarum-sound-system",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Inline audio links and a persistent global audio bar powered by howler.js.",
   "type": "flarum-extension",
   "license": "MIT",
