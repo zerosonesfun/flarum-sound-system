@@ -20,6 +20,14 @@ $forumLess = __DIR__.'/resources/less/forum.less';
 $adminLess = __DIR__.'/resources/less/admin.less';
 
 $forumFrontend = new Extend\Frontend('forum');
+// Flarum 1.x: forum bundle uses webpack runtime that expects flarum.reg._webpack_runtimes (2.0). Polyfill so it exists.
+$forumFrontend->content(function (\Flarum\Frontend\Document $document) {
+    $document->head[] = '<script>(function(){'
+        .'if(typeof window.flarum==="undefined")window.flarum={};'
+        .'if(typeof window.flarum.reg==="undefined")window.flarum.reg={};'
+        .'if(typeof window.flarum.reg._webpack_runtimes==="undefined")window.flarum.reg._webpack_runtimes={};'
+        .'})();</script>';
+});
 if (file_exists($forumJs)) {
     $forumFrontend->js($forumJs);
 }
