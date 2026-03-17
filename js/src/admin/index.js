@@ -330,38 +330,33 @@ app.initializers.add('zerosonesfun-sound-system-admin', () => {
     },
   };
 
-  // Flarum 1.x: extension id from composer name (slash -> dash). Some omit "flarum-" prefix.
-  const data =
-    app.extensionData &&
-    (app.extensionData.for('zerosonesfun-flarum-sound-system') ||
-      app.extensionData.for('zerosonesfun-sound-system'));
-  if (!data) return;
-
-  data
+  // Extension id = composer name with / → -, omit "flarum-" from package (same as zerosonesfun/flarum-preview → zerosonesfun-preview)
+  app.extensionData
+    .for('zerosonesfun-sound-system')
     .registerSetting({
       setting: 'zerosonesfun-sound-system.inline_enabled',
       type: 'boolean',
       label: app.translator.trans('zerosonesfun-sound-system.admin.settings.inline_label'),
       help: app.translator.trans('zerosonesfun-sound-system.admin.settings.inline_help'),
-    })
+    }, 100)
     .registerSetting({
       setting: 'zerosonesfun-sound-system.global_enabled',
       type: 'boolean',
       label: app.translator.trans('zerosonesfun-sound-system.admin.settings.global_label'),
       help: app.translator.trans('zerosonesfun-sound-system.admin.settings.global_help'),
-    })
+    }, 95)
     .registerSetting({
       setting: 'zerosonesfun-sound-system.app_sounds',
       type: 'boolean',
       label: app.translator.trans('zerosonesfun-sound-system.admin.settings.app_sounds_label'),
       help: app.translator.trans('zerosonesfun-sound-system.admin.settings.app_sounds_help'),
-    })
+    }, 90)
     .registerSetting({
       setting: 'zerosonesfun-sound-system.dev_console_debug',
       type: 'boolean',
       label: app.translator.trans('zerosonesfun-sound-system.admin.settings.dev_console_debug_label'),
       help: app.translator.trans('zerosonesfun-sound-system.admin.settings.dev_console_debug_help'),
-    })
-    .registerSetting(() => m(TracksSetting));
+    }, 85)
+    .registerSetting(() => m(TracksSetting), 80);
 });
 
