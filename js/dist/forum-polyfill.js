@@ -1,1 +1,0 @@
-(function(){if(typeof window.flarum==="undefined")window.flarum={};if(typeof window.flarum.reg==="undefined")window.flarum.reg={};if(typeof window.flarum.reg._webpack_runtimes==="undefined")window.flarum.reg._webpack_runtimes={};})();

@@ -20,11 +20,6 @@ $forumLess = __DIR__.'/resources/less/forum.less';
 $adminLess = __DIR__.'/resources/less/admin.less';
 
 $forumFrontend = new Extend\Frontend('forum');
-// Flarum 1.x: forum bundle expects flarum.reg._webpack_runtimes (2.0). Load polyfill script before forum.js.
-$forumPolyfill = __DIR__.'/js/dist/forum-polyfill.js';
-if (file_exists($forumPolyfill)) {
-    $forumFrontend->js($forumPolyfill);
-}
 if (file_exists($forumJs)) {
     $forumFrontend->js($forumJs);
 }
